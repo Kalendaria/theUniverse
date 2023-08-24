@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+  <title>Universe</title>
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .fancy-text {
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      font-family: 'Arial', sans-serif;
+    }
+    </style>
+    <script>
+function changeTextColor() {
+  var textElements = document.querySelectorAll('.fancy-text span');
+  
+  textElements.forEach(function(element) {
+    var colors = ['#8507b3','#39b0d4']; // Space and Cosmos colors
+    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+    element.style.color = randomColor;
+  });
+}
+setInterval(changeTextColor, 1000); // Change color every second
+</script>
+</head>
+
+<body>
+
+  <!-- header section strats -->
+  <header class="header_section innerpage_header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <span>
+            Space
+          </span>
+        </a>
+        <div class="" id="">
+
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="Universe.html">Universe</a>
+                <a href="DISCOVERED UNIVERSE.html">DISCOVERED UNIVERSE</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="gallery.html">Gallery</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- end header section -->
+  <section class="slider_section position-relative">
+    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="SpaceImg/PIC1.jpg" class="responsive" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="SpaceImg/PIC9.jpg" class="responsive" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="SpaceImg/PIC8.jpg" class="responsive" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel_btn_box">
+        <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="detail-box">
+      <div class="col-md-8 col-lg-6 mx-auto">
+        <div class="inner_detail-box">
+          <h1 class="fancy-text">
+            <span>About Me </span> <br>
+          </h1>
+          <p>
+            Student of Naresuan University
+            64316084 Sittipol Parnthong
+            Computer Science Year 3 <br/>
+            <i class="fa fa-envelope"></i>
+            p2r6.sittipol@gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- info section -->
+  <!-- end info_section -->
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
